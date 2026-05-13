@@ -1,0 +1,86 @@
+
+#project{
+    position: relative;
+    top: 400px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.project-title{
+    position: relative;
+    left: 800px;
+    width: 400px;
+    max-height: fit-content;
+}
+
+.project-line{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    background-color: #D9D9D9;
+    line-height: 2px;
+    width: 1200px;
+}
+.project-card{
+    width: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centers horizontally */
+    text-align: center;    /* centers text */
+    padding: 40px;
+    cursor: pointer;
+}
+.project-special-letter{
+    font-family: 'Sacramento', cursive;
+    font-size: 32px;
+    font-weight: 400; 
+}
+.project-image img {
+    width: 380px;
+    height: 300px;
+}
+.project-description{
+    width: 400px;
+    overflow: hidden;
+}
+p{
+   text-align: justify;
+   font-size:12px;
+}
+h4{
+    font-weight: 600;
+}
+.project-card-title{
+    width: 150px;
+    height: 20px;
+    margin: 10px 0 5px 0; /* top, right, bottom, left */
+}
+.project-view-button{
+    width: 400px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.vertical-line{
+  width: 1px;       /* thin line */
+  height: 100px;    /* controls vertical length */
+  background-color: black;
+  border: none;
+}
+
+.list-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    position: inherit;
+    top: 10px;
+}
+
+.project-card:hover{
+   
+    box-shadow: 0 12px 30px rgba(150, 148, 148, 0.815);
+}

@@ -1,0 +1,11 @@
+.nav-menu.MuiButton-root{
+  background: black;
+  color: white;
+  border: none;
+  width: 190px;
+  height: 68px;
+  cursor: pointer;
+  border-radius: 0;
+  box-shadow: none ;
+  font-family: 'Poppins', sans-serif;
+}

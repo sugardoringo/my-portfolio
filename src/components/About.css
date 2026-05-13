@@ -1,0 +1,45 @@
+
+#about{
+    width: 1000px;
+    align-content: center;
+    padding: 50px;
+}
+.about-title{
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+h2{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+hr{
+    position: relative;
+    top: -80px;
+    left: 150px;
+    width: 780px;
+    border: none;
+    height: 2px;
+    background-color: black;
+}
+
+.word-by-word{
+    text-align: justify;
+    position: relative;
+    top: -20px;
+    left: 120px;
+}
+
+.bottom-underline{
+    position: relative;
+    top: 20px;
+    left: 100px;
+    width: 1000px;
+    border: none;
+    height: 2px;
+    background-color: black;
+}
+p{
+    text-align: justify;
+}

@@ -1,6 +1,6 @@
 
 import "./Pages.css";
-import PortfolioMain from "../assets/Portfolio-banner.png";
+import PortfolioMain from "../assets/portfolio-banner.png";
 
 
 

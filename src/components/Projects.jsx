@@ -1,4 +1,4 @@
-import DXTBanner from '../assets/dxtbanner.png'
+import DXTBanner from '../assets/dxt-banner.png'
 import SurfaceBanner from '../assets/surface-banner.png'
 import PortfolioBanner from '../assets/portfolio-mini.png'
 import "./Projects.css"

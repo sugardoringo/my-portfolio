@@ -9,11 +9,11 @@ import Projects from "./components/Projects.jsx";
 import Experience from "./components/Experience.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
-import ScrollToTop from "./ScrollToTop"
+import ScrollToTop from "./ScrollToTop";
 
 import SurfaceArtistry from "./pages/SurfaceArtistry.jsx";
-import DextertonShop from "./pages/DextertonShop.jsx"
-import Portfolio from "./pages/Portfolio.jsx"
+import DextertonShop from "./pages/DextertonShop.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
 
 import { Routes, Route, useLocation } from "react-router-dom";
 

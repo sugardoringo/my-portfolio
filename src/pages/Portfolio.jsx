@@ -1,6 +1,7 @@
 
 import "./Pages.css";
-import PortfolioMain from "../assets/PortfolioBanner.png";
+import PortfolioMain from "../assets/Portfolio-banner.png";
+
 
 
 function Portfolio() {

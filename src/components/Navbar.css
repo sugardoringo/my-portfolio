@@ -57,34 +57,40 @@ align-items: center;
   font-size: 26px;
   font-weight: 700;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 700px) {
 
   .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    padding: 12px 20px;
+    padding: 10px 15px;
+    padding-top: 0;
   }
 
   .navbar-left {
     padding: 0;
-    font-size: 16px;
+    font-size: 14px;
+    flex: 1;
   }
 
   .navbar-center {
-    width: auto;
-    flex: unset;
-    margin: 0;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* controls spacing between items */
+    white-space: nowrap; /* prevents wrapping */
+    overflow: hidden;
   }
 
   .nav-theme-button {
-    padding: 8px 0;
+    padding: 6px 10px;
     font-size: 12px;
+    flex-shrink: 1; /* allows compression */
   }
 
   .special-letter {
-    font-size: 18px;
+    font-size: 16px;
   }
 }

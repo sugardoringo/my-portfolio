@@ -1,0 +1,190 @@
+/* src/pages/SurfaceArtistry.css */
+
+.surface-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  padding: 60px 80px;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+.surface-hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+
+}
+
+.surface-hero img {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.surface-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.project-heading {
+  text-align: center;
+  margin-bottom: 60px;
+ font-family: 'Poppins', sans-serif;
+}
+
+.project-heading h1 {
+ font-weight: 600;
+}
+
+.project-heading h1 {
+  font-size: 64px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.project-heading p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #000;
+  font-size: 18px;
+}
+
+/* COLUMN STYLE */
+
+.info-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-card {
+  background: white;
+  padding: 30px;
+}
+
+.info-card h3 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.info-card p,
+.info-card li {
+  color: #000;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+.info-card ul {
+  padding-left: 20px;
+}
+
+.website-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.website-btn a {
+  text-decoration: none;
+  background: black;
+  color: white;
+  padding: 16px 50px;
+  transition: 0.3s ease;
+}
+
+.website-btn a:hover {
+  transform: translateY(-3px);
+}
+.page-special-letter{
+     font-family: 'Sacramento', cursive;
+     font-size: 100px;
+}
+
+.project-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+
+/* LINKS */
+.project-nav a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.project-nav a:hover {
+    opacity: 0.6;
+}
+
+/* LEFT + RIGHT ALIGNMENT STYLE */
+.nav-home-link {
+    text-align: left;
+}
+
+.nav-next-link {
+    text-align: right;
+}
+/* UI SHOWCASE */
+
+.ui-showcase {
+  margin-top: 120px;
+}
+
+.ui-heading {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.ui-heading h2 {
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.ui-heading p {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: auto;
+}
+
+.ui-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.ui-card {
+  overflow: hidden;
+  border-radius: 20px;
+  transition: 0.4s ease;
+}
+
+.ui-card img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  transition: 0.4s ease;
+}
+
+.ui-card:hover img {
+  transform: scale(1.03);
+}
+@media (max-width: 700px) {
+
+  .surface-content p, h1, h2, h3{
+    text-align: justify;
+  }
+  
+}

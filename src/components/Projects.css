@@ -1,5 +1,5 @@
 
-#project{
+#projects{
     position: relative;
     top: 400px;
     justify-content: center;
@@ -29,7 +29,6 @@
     align-items: center;   /* centers horizontally */
     text-align: center;    /* centers text */
     padding: 40px;
-    cursor: pointer;
 }
 .project-special-letter{
     font-family: 'Sacramento', cursive;
@@ -62,6 +61,7 @@ h4{
     background-color: black;
     color: white;
     border: none;
+    cursor: pointer;
 }
 .vertical-line{
   width: 1px;       /* thin line */
@@ -83,4 +83,77 @@ h4{
 .project-card:hover{
    
     box-shadow: 0 12px 30px rgba(150, 148, 148, 0.815);
+}
+@media screen and (max-width: 768px) {
+
+    /* CENTER EVERYTHING IN SECTION */
+    #projects {
+        top: 100px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* TITLE CENTER FIX */
+    .project-title {
+        position: static;   /* remove left: 800px effect */
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /* LINE CENTER FIX */
+    .project-line {
+        width: 90%;
+        margin: 10px auto;
+        left: 0;
+        top: 0;
+    }
+
+    /* STACK CARDS VERTICALLY + CENTER */
+    .list-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    /* CARD CENTER + FLUID */
+    .project-card {
+        width: 90%;
+        max-width: 350px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* IMAGE RESPONSIVE */
+    .project-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* TEXT CENTER */
+    .project-description {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* BUTTON FULL CENTER */
+    .project-view-button {
+        width: 100%;
+    }
+
+    /* REMOVE GLOBAL P JUST FOR MOBILE */
+    p {
+        text-align: center;
+        font-size: 12px;
+    }
 }

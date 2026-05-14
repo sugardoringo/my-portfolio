@@ -25,3 +25,42 @@
     font-size: 12px;
     font-weight: 500;
 }
+
+@media screen and (max-width: 768px) {
+
+    .footer-content {
+        height: auto;
+        top: 150px;
+        padding: 40px 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    /* TITLE */
+    .footer-content h1 {
+        font-size: 28px;
+        line-height: 1.4;
+        margin: 0;
+    }
+
+    /* BIG LETTER */
+    .footer-special-letter {
+        font-size: 60px;
+    }
+
+    /* PARAGRAPH */
+    .footer-content p {
+        position: static;   /* removes left: 730px issue */
+        top: auto;
+        left: auto;
+
+        font-size: 12px;
+        margin-top: 10px;
+        text-align: center;
+    }
+}

@@ -5,6 +5,9 @@ import Button from "@mui/material/Button";
 import CloseIcon from '@mui/icons-material/Close';
 import ShimmerWhite from '../assets/shimmer-white.png'
 
+import { Link } from "react-router-dom";
+
+
 function Menu({ open, onClose }) {
   return (
     <Drawer anchor="right" open={open} onClose={onClose} className="drawer-content">
@@ -14,29 +17,35 @@ function Menu({ open, onClose }) {
         </Button>
         <div className='menu-content'>
 
-          <a href="#home" className="nav-home">
+          <Link to="/" className="nav-home" onClick={onClose}>
             <img className="menu-icon" src={ShimmerWhite} alt="icon" />
             <span className="menu-special-letter">H</span>ome
-          </a>
-          <a href="#about" className="nav-about">
+          </Link>
+
+          <Link to="/about" className="nav-about" onClick={onClose}>
             <img className="menu-icon" src={ShimmerWhite} alt="icon" />
             <span className="menu-special-letter">A</span>bout
-            </a>
-          <a href="#stacks" className="nav-stack">
+          </Link>
+
+          <Link to="/stacks" className="nav-stack" onClick={onClose}>
             <img className="menu-icon" src={ShimmerWhite} alt="icon" />
             <span className="menu-special-letter">S</span>tack
-            </a>
-          <a href="#project" className="nav-project">
+          </Link>
+
+          <Link to="/projects" className="nav-project" onClick={onClose}>
             <img className="menu-icon" src={ShimmerWhite} alt="icon" />
             <span className="menu-special-letter">P</span>roject
-            </a>
-          <a href="#experience" className="nav-experience">
+          </Link>
+
+          <Link to="/experience" className="nav-experience" onClick={onClose}>
             <img className="menu-icon" src={ShimmerWhite} alt="icon" />
             <span className="menu-special-letter">E</span>xperience
-            </a>
-          <a href="#contact" className="nav-contact">
+          </Link>
+
+          <Link to="/contact" className="nav-contact" onClick={onClose}>
             <img className="menu-icon" src={ShimmerWhite} alt="icon" />
-            <span className="menu-special-letter">C</span>ontact</a>
+            <span className="menu-special-letter">C</span>ontact
+          </Link>
         </div>
       </Box>
     </Drawer>

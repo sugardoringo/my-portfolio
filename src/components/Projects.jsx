@@ -1,6 +1,6 @@
-import DXTBanner from '../assets/dxtbanner.PNG'
+import DXTBanner from '../assets/dxtbanner.png'
 import SurfaceBanner from '../assets/surface-banner.png'
-import PortfolioBanner from '../assets/portfolioMini.png'
+import PortfolioBanner from '../assets/portfolio-mini.png'
 import "./Projects.css"
 import { Link } from "react-router-dom";
 

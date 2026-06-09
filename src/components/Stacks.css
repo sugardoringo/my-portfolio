@@ -1,41 +1,32 @@
-#stacks{
-    align-content: center;
-    justify-content: center;
+#stacks {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: center; 
+    justify-content: center;
     min-height: 100vh;
+    padding: 50px;
+    gap: 40px;
 }
 .stack-title{
+    margin-right: 950px;
     max-width: 100px;
-    position: relative;
-    top: 140px;
-    left: 50px;
-}
-.first-row{
-    display: flex;
-    align-items: center;
-    position: relative;
-    top: 150px;
-    max-width: 1290px;
 }
 
-.container-icons{
+
+.container-icons {
     display: flex;
-    border: 1px solid black;
-    width: 180px;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    border-radius: 5px;
-    position: relative;
-    left: 80px;
-    margin: 10px;
     gap: 10px;
-    transition: all 0.3s ease;
-    box-shadow: 
-    0 4px 6px rgba(0, 0, 0, 0.3),
-    0 8px 15px rgba(0, 0, 0, 0.1);
+
+    width: 180px;
+    padding: 10px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
 }
 
 .first-row img,
@@ -44,20 +35,17 @@
     height: 40px;
 }
 
-.second-row{
+.first-row,
+.second-row,
+.third-row {
     display: flex;
-    position: relative;
-    top: 180px;
-    left: 130px;
-    align-items: flex-start;
-    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* important for responsiveness */
+    gap: 20px;
+    width: 100%;
 }
-.third-row{
-    position: relative;
-    top: 210px;
-    left: 450px;
-    max-width: 100px;
-}
+
 
 .container-icons:hover{
     transform: translateY(-5px);
@@ -73,54 +61,22 @@ h5{
 @media (max-width: 700px) {
 
   #stacks {
-    min-height: auto;
-    padding: 60px 20px;
-    gap: 30px;
-    align-items: center;
-  }
-
-  .stack-title {
-    position: static;
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .stack-title h2 {
-    font-size: 24px;
+    padding: 40px 20px;
   }
 
   .first-row,
   .second-row,
   .third-row {
-    position: static;
-    display: flex;
-    flex-wrap: wrap; /* ✅ allows responsive wrapping */
     justify-content: center;
-    align-items: center;
     gap: 15px;
-    width: 100%;
-    max-width: 100%;
   }
 
   .container-icons {
-    position: static;
-    width: 130px;
-    padding: 10px;
-    margin: 0;
-    gap: 8px;
-  }
-
-  .container-icons img {
-    width: 32px !important;
-    height: 32px !important;
+    width: 50%; /* 👈 THIS gives max 2 per row */
+    max-width: 120px;
   }
 
   h5 {
     font-size: 14px;
-    text-align: center;
-  }
-
-  .hero-special-letter {
-    font-size: 40px;
   }
 }

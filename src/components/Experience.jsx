@@ -11,11 +11,10 @@ function Experience(){
                 <img src={Spinner} className="Vinyl" alt="vinyl" />
 
                 <div className="exp">
-                    <hr className="bold-vertical-line-exp"/>
+    
                     <h2>UI/UX Intern</h2>
-                    <hr className="vertical-line-exp"/>
-                    <h3>Dexterton Corporation</h3>
-                    <h5>Jan 2026 - April 2026</h5>
+                    <h3 className="exp-company-name">Dexterton Corporation</h3>
+                    <h5 className="exp-date">Jan 2026 - April 2026</h5>
                 </div>
             
             </div>

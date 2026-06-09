@@ -68,10 +68,10 @@
   #home {
     flex-direction: column;
     justify-content: center;
-    align-items: center;   /* ✅ center everything */
-    text-align: center;    /* ✅ center text */
-    padding: 70px 15px 30px; /* 🔥 reduced */
-    gap: 12px;              /* 🔥 tighter spacing */
+    align-items: center;  
+    text-align: center;    
+    padding: 70px 15px 30px; 
+    gap: 5px;              
     margin-top: 0;
   }
 

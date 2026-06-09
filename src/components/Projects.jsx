@@ -33,7 +33,7 @@ function Projects(){
             <h2><span className="hero-special-letter">P</span>rojects/Case Study</h2>
             </div>
 
-            <hr className="project-line"/>
+            
 
             <div className="list-container">
                 {projects.map((project, index) => (
@@ -55,7 +55,7 @@ function Projects(){
                 </div>
                 ))}
             </div>
-            <hr className="project-line"/>
+            
         </div>
     )
 }

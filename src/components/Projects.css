@@ -1,159 +1,110 @@
-
-#projects{
-    position: relative;
-    top: 400px;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-.project-title{
-    position: relative;
-    left: 800px;
-    width: 400px;
-    max-height: fit-content;
-}
-
-.project-line{
-    position: relative;
-    top: 5px;
-    left: 5px;
-    background-color: #D9D9D9;
-    line-height: 2px;
-    width: 1200px;
-}
-.project-card{
-    width: 400px;
-    overflow: hidden;
+#projects {
+    min-height: 100vh;
+    padding: 60px 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;   /* centers horizontally */
-    text-align: center;    /* centers text */
-    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
-.project-special-letter{
-    font-family: 'Sacramento', cursive;
-    font-size: 32px;
-    font-weight: 400; 
+
+.project-title {
+    width: 100%;
+    text-align: center;
 }
+
+.project-line {
+    width: 80%;
+    max-width: 1200px;
+    height: 2px;
+    background-color: #D9D9D9;
+    margin: 0 auto;   /* ✅ this centers it */
+}
+
+.list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.project-card {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    gap: 10px;
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    box-shadow: 0 12px 30px rgba(150, 148, 148, 0.3);
+}
+
 .project-image img {
-    width: 380px;
+    width: 100%;
     height: 300px;
+    object-fit: cover;
 }
-.project-description{
-    width: 400px;
-    overflow: hidden;
+
+.project-description {
+    width: 100%;
 }
-p{
-   text-align: justify;
-   font-size:12px;
+
+p {
+    text-align: justify;
+    font-size: 12px;
 }
-h4{
+
+h4 {
     font-weight: 600;
 }
-.project-card-title{
-    width: 150px;
-    height: 20px;
-    margin: 10px 0 5px 0; /* top, right, bottom, left */
-}
-.project-view-button{
-    width: 400px;
+
+.project-view-button {
+    width: 120px;
     height: 50px;
     background-color: black;
     color: white;
     border: none;
     cursor: pointer;
 }
-.vertical-line{
-  width: 1px;       /* thin line */
-  height: 100px;    /* controls vertical length */
-  background-color: black;
-  border: none;
+
+.project-special-letter {
+    font-family: 'Sacramento', cursive;
+    font-size: 32px;
+    font-weight: 400;
 }
 
-.list-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    position: inherit;
-    top: 10px;
-}
-
-.project-card:hover{
-   
-    box-shadow: 0 12px 30px rgba(150, 148, 148, 0.815);
-}
 @media screen and (max-width: 768px) {
 
-    /* CENTER EVERYTHING IN SECTION */
     #projects {
-        top: 100px;
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        padding: 40px 15px;
     }
 
-    /* TITLE CENTER FIX */
-    .project-title {
-        position: static;   /* remove left: 800px effect */
-        width: 100%;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    /* LINE CENTER FIX */
     .project-line {
         width: 90%;
-        margin: 10px auto;
-        left: 0;
-        top: 0;
     }
 
-    /* STACK CARDS VERTICALLY + CENTER */
     .list-container {
-        display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 20px;
-        width: 100%;
     }
 
-    /* CARD CENTER + FLUID */
     .project-card {
-        width: 90%;
         max-width: 350px;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
     }
 
-    /* IMAGE RESPONSIVE */
     .project-image img {
-        width: 100%;
         height: auto;
     }
 
-    /* TEXT CENTER */
-    .project-description {
-        width: 100%;
-        text-align: center;
-    }
-
-    /* BUTTON FULL CENTER */
-    .project-view-button {
-        width: 100%;
-    }
-
-    /* REMOVE GLOBAL P JUST FOR MOBILE */
     p {
         text-align: center;
-        font-size: 12px;
     }
 }

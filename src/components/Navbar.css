@@ -35,7 +35,6 @@ align-items: center;
   padding: 0;
 }
 
-
 .nav-theme-button{
   background-color: #fff;
   border: none;
@@ -50,7 +49,6 @@ align-items: center;
   margin: 0;
   padding-bottom: 8px;
 }
-
 
 .special-letter{
   font-family: 'Sacramento', cursive;
@@ -71,7 +69,7 @@ align-items: center;
 
   .navbar-left {
     padding: 0;
-    font-size: 14px;
+    font-size: 12px;
     flex: 1;
   }
 
@@ -79,15 +77,16 @@ align-items: center;
     flex: 2;
     display: flex;
     justify-content: center;
-    gap: 10px; /* controls spacing between items */
-    white-space: nowrap; /* prevents wrapping */
+    gap: 10px;
+    white-space: nowrap; 
     overflow: hidden;
+    font-size: 12px;
   }
 
   .nav-theme-button {
     padding: 6px 10px;
-    font-size: 12px;
-    flex-shrink: 1; /* allows compression */
+    font-size: 10px;
+    flex-shrink: 1; 
   }
 
   .special-letter {
